@@ -1,0 +1,46 @@
+server:
+  port: 8978
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservices
+    username: springboot
+    password: harsh1234
+    driver-class-name: org.postgresql.Driver
+#  mvc:
+#    view:
+#      prefix: /views
+#      suffix: .jsp
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        
+  application:
+      name: HOTEL-SERVICE
+      
+#okta authentication OPEN
+okta:
+  oauth2:
+    issuer: https://dev-69203606.okta.com/oauth2/default
+    audience: api://default
+#okta authentication END
+        
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8980/eureka
+        
+    
+        
+  
