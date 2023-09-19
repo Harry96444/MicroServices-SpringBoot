@@ -37,11 +37,11 @@ DESCRIPTION of what do these microservices do :
 
 EXAMPLE of Data you get from response when you fire get user :
 -----------------------------------------------------
-{
+`{
     "userId": "038cc9d0-1b2a-4e7c-bd35-b52ce602e69c",
-    "name": "Anant Upadhyay",
-    "email": "anantUpadhyay200@gmail.com",
-    "about": "He is an pharmasist",
+    "name": "Harsh Vyas",
+    "email": "harsh@gmail.com",
+    "about": "He is an Engineer",
     "ratings": [
         {
             "ratingId": "6507f2bf6391593d87e5c32c",
@@ -58,6 +58,8 @@ EXAMPLE of Data you get from response when you fire get user :
         }
     ]
 }
+`
+
 ------------------------------------------------------------
 
 
